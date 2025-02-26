@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanumangarh Weather</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .weather-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #weather-widget {
+            margin-top: 20px;
+        }
+
+        #weather-widget iframe {
+            width: 300px; /* Adjust as needed */
+            height: 250px; /* Adjust as needed */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Hanumangarh Weather</h1>
+        <p>Current weather conditions in Hanumangarh.</p>
+
+        <div id="weather-widget">
+            <iframe src="https://www.meteoblue.com/en/weather/widget/daily/hanumangarh_india_1271108?geoloc=fixed&nocurrent=0&noforecast=0&days=7&tempunit=C&windunit=kmh&precipunit=mm&coloured=coloured"  frameborder="0" allowfullscreen="" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 300px; height: 250px"></iframe>
+        </div>
+    </div>
+</body>
+</html>
